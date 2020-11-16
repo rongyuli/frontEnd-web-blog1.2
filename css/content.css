@@ -82,6 +82,9 @@ h3 {
     #video-box {
         width: 80%;
     }
+    #content > img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px) {
     #video-box {
