@@ -1,8 +1,8 @@
-html{
-    overflow-y:scroll;
+html {
+    overflow-y: scroll;
 }
 
-textarea{
+textarea {
     display: block;
     resize: none;
     font-size: 19px;
@@ -10,38 +10,38 @@ textarea{
     padding: 5px 0 5px 10px;
     border-radius: 5px;
 }
-textarea:first-of-type{
+textarea:first-of-type {
     width: 300px;
     height: 25px;
     margin: 25px 0 10px 0;
 }
-textarea:last-of-type:focus{
+textarea:last-of-type:focus {
     outline: 2px solid #081272;
 }
-textarea:last-of-type{
+textarea:last-of-type {
     padding: 5px 0 5px 10px;
     width: 100%;
     height: 90px;
 }
-textarea:first-of-type:focus{
+textarea:first-of-type:focus {
     outline: 2px solid #ffba00;
 }
-button{
+button {
     display: inline-block;
     background: none;
     border: none;
     margin: 10px 50px;
     cursor: pointer;
 }
-[v-cloak]{
+[v-cloak] {
     display: none;
 }
 
-#app{
+#app {
     width: 83%;
     margin: 0 auto;
 }
-#app>h2{
+#app > h2 {
     margin: 30px 0 0 30px;
     position: relative;
     padding-left: 15px;
@@ -50,20 +50,19 @@ button{
     color: #081272;
     background: white;
 }
-h2>img{
+h2 > img {
     position: relative;
     top: 4px;
 }
 
-
-#message{
+#message {
     padding: 15px;
     margin-bottom: 20px;
-    background-color: rgb(230,230,230);
+    background-color: rgb(230, 230, 230);
     border-radius: 5px;
 }
 
-#submit{
+#submit {
     display: block;
     padding: 15px;
     background-color: white;
@@ -72,48 +71,124 @@ h2>img{
     z-index: 1;
 }
 
-#top-line{
+#top-line {
     position: relative;
     top: -15px;
     height: 3px;
     border-radius: 2px;
     background: #081272;
 }
-#button-line{
+#button-line {
     height: 3px;
     border-radius: 2px;
     border-bottom: 3px dotted #ffba00;
     position: relative;
     top: -48px;
-}    
+}
 
-h2{
+h2 {
     font-size: 25px;
     font-weight: 500;
     color: rgb(51, 51, 51);
 }
-h3{
+h3 {
     font-size: 15px;
     font-weight: 400;
     color: gray;
 }
-#header{
+#header {
     padding-bottom: 10px;
     border-bottom: gray dotted 1px;
     margin-bottom: 12px;
 }
-#header>img{
+#header > img {
     border-radius: 50%;
     display: inline-block;
     vertical-align: bottom;
 }
-#info{
+#info {
     display: inline-block;
-    margin-left: 10px; 
+    margin-left: 10px;
     padding-bottom: 7px;
 }
-#content{
+#content {
     background: white;
     padding: 10px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 840px) {
+    section {
+        flex-direction: column;
+        background-color: rgba(233, 233, 233, 0.603);
+    }
+    section h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    section div {
+        padding: 0 10px 10px 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    header h1 {
+        margin: 0 auto;
+    }
+    header ul {
+        width: 100%;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aliceblue;
+    }
+    body {
+        width: 100%;
+    }
+    html {
+        min-width: 350px;
+    }
+
+    nav {
+        position: relative;
+        padding-bottom: 20px;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.359);
+    }
+    #bar {
+        bottom: 15px;
+        width: 80px;
+    }
+    #nav > li:nth-of-type(1) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(2) {
+        margin: 30px 20px 20px 0;
+    }
+    #nav > li:nth-of-type(3) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(4) {
+        margin: 30px 5px 20px 5px;
+    }
+    #nav {
+        justify-content: space-between;
+    }
+    section img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    #nav li {
+        font-size: 20px;
+    }
+    #bar {
+        height: 5px;
+        width: 60px;
+    }
 }
