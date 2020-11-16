@@ -1,0 +1,125 @@
+main {
+    width: 83%;
+    margin: 20px auto;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    border-radius: 5px;
+}
+section img {
+    width: 380px;
+    height: 240px;
+}
+section {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    display: flex;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.459);
+    transition: 0.2s;
+    padding: 10px;
+}
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+section > div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section > img {
+    margin: auto;
+    border-radius: 5px;
+}
+section > a {
+    margin: auto;
+}
+section a:hover {
+    color: #081272;
+}
+p {
+    font-size: 18px;
+    line-height: 150%;
+}
+.data {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 840px) {
+    section {
+        flex-direction: column;
+        background-color: rgba(233, 233, 233, 0.603);
+    }
+    section h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    section div {
+        padding: 0 10px 10px 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    header h1 {
+        margin: 0 auto;
+    }
+    header ul {
+        width: 100%;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aliceblue;
+    }
+    body {
+        width: 100%;
+    }
+    html {
+        min-width: 350px;
+    }
+
+    nav {
+        position: relative;
+        padding-bottom: 20px;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.359);
+    }
+    #bar {
+        bottom: 15px;
+        width: 80px;
+    }
+    #nav > li:nth-of-type(1) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(2) {
+        margin: 30px 20px 20px 0;
+    }
+    #nav > li:nth-of-type(3) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(4) {
+        margin: 30px 5px 20px 5px;
+    }
+    #nav {
+        justify-content: space-between;
+    }
+    section img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    #nav li {
+        font-size: 20px;
+    }
+    #bar {
+        height: 5px;
+        width: 60px;
+    }
+}

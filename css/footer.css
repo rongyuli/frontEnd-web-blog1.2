@@ -1,0 +1,13 @@
+footer{
+    height: 150px;
+    width: 100%;
+    /* background-color: #f7f7f7; */
+    color: black;
+}
+footer>p:first-of-type{
+    padding-top: 31px;
+}
+footer>p{
+    font-size: 15px;
+    text-align: center;
+}

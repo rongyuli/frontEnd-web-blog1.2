@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/message.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon"/>
+
+</head>
+<body>
+    <header>
+        <h1><img src="../images/logo.png" alt="" width="55px" style="position: relative; top: 5px;">
+            <span style="position: relative; left: -5px;">网络工程</span> 
+        </h1>
+        <nav>
+            <ul id="nav">
+                <li class="nav_btn">
+                    <a href="../index.html">首页</a>
+                </li>
+                <li class="nav_btn">
+                    <a href="./guide.html">就业指导</a>
+                </li>
+                <li class="nav_btn">
+                    <a href="./message.html">留言板</a>    
+                </li>
+                <li class="nav_btn">
+                    <a href="./about.html">关于项目</a>
+                </li>
+            </ul>
+            <div id="bar"></div>
+        </nav>
+    </header>
+    
+    <div id="app" v-cloak>
+        <h2><img src="../images/pencilDesigned.png" width="30px" alt=""> 欢迎留言</h2>
+        <div id="top-line" class="line"></div>
+
+        <textarea maxlength="15"  placeholder="你的昵称" v-model="name"></textarea>
+        <textarea id="contentInput" placeholder="想说的话" v-model="content"></textarea>
+        <button id="submit" type="button" @click="addMessage" :disabled="content.length === 0">
+            <img id="submitBtn" :disabled="content.length === 0" src="../images/prohibit.jpg" width="30px" alt="">
+        </button>
+        <div id="button-line" ></div>
+
+        <div id="message" v-for="(item,index) in messageArray">
+            <div id="header">
+                <img :src="item.src" width="60px" alt="">
+                <div id="info">
+                    <h2>{{item.name}}</h2>
+                    <h3>{{item.time}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.floor}}</h3>
+                </div>
+            </div>
+            <p id="content">{{item.content}}</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>联系电话：13977956601</p>
+        <p>E-mail：879405797@qq.com</p>
+        <p>© 2017级1716040601容于力 All rights reserved.</p>
+    </footer>
+
+    <script >
+        const hash = 2
+    </script>
+    <script src="../dependencies/jquery-3.4.1.min.js"></script>
+    <script src="../dependencies/vue.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/message.js"></script>
+    
+</body>
+</html>

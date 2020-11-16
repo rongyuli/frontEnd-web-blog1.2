@@ -1,0 +1,58 @@
+a:hover{
+    color: #ffba00;
+}
+
+body{
+    background-color: rgb(247, 247, 247);;
+}
+main{
+    box-sizing: border-box;
+    width: 83%;
+    padding: 30px;
+    margin: 35px auto;
+    background: white;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 9px;
+    color: rgb(51, 51, 51);
+}
+h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+#header{
+    padding-bottom: 20px;
+    border-bottom: gray dotted 1px;
+    margin-bottom: 25px;
+}
+#header>img{
+    display: inline-block;
+    vertical-align: bottom;
+}
+#info{
+    display: inline-block;
+    margin-left: 10px; 
+    padding-bottom: 7px;
+}
+#content>h2{
+    padding: 0;
+    margin: 18px 0;
+    font-weight: 600;
+    color: black;
+}
+#content>img{
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+}
+#content>p{
+    margin-bottom: 10px;
+}
+#content>h2>img{
+    position: relative;
+    top: 6px;
+}
