@@ -100,14 +100,15 @@ h3 {
     padding-bottom: 10px;
     border-bottom: gray dotted 1px;
     margin-bottom: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 #header > img {
     border-radius: 50%;
-    display: inline-block;
     vertical-align: bottom;
 }
 #info {
-    display: inline-block;
     margin-left: 10px;
     padding-bottom: 7px;
 }
@@ -115,22 +116,10 @@ h3 {
     background: white;
     padding: 10px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 840px) {
-    section {
-        flex-direction: column;
-        background-color: rgba(233, 233, 233, 0.603);
-    }
-    section h2 {
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: 10px;
-    }
-    section div {
-        padding: 0 10px 10px 10px;
-    }
-
     header {
         flex-direction: column;
         padding-top: 15px;
@@ -141,12 +130,15 @@ h3 {
     header ul {
         width: 100%;
     }
-    main {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: aliceblue;
+    section h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
     }
+    section div {
+        padding: 0 10px 10px 10px;
+    }
+
     body {
         width: 100%;
     }
@@ -178,17 +170,52 @@ h3 {
     #nav {
         justify-content: space-between;
     }
-    section img {
-        width: 100%;
-        height: auto;
+    #header {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    #header img {
+        width: 20%;
+        height: 100%;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
+    #header img {
+        width: 30%;
+        height: 100%;
+    }
     #nav li {
         font-size: 20px;
+    }
+    #nav > li:nth-of-type(1) {
+        margin: 20px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(2) {
+        margin: 20px 15px 20px 0;
+    }
+    #nav > li:nth-of-type(3) {
+        margin: 20px 0 20px 0;
+    }
+    #nav > li:nth-of-type(4) {
+        margin: 20px 5px 20px 0;
+    }
+    #nav {
+        justify-content: space-between;
+    }
+    .nav_btn:nth-of-type(1) {
+        width: 65px !important;
     }
     #bar {
         height: 5px;
         width: 60px;
+    }
+}
+@media screen and (max-width: 380px) {
+    #nav li {
+        font-size: 18px;
+    }
+    .nav_btn:nth-of-type(1) {
+        width: 55px !important;
     }
 }

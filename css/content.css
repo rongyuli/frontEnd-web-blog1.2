@@ -44,11 +44,7 @@ h3 {
     font-weight: 600;
     color: black;
 }
-#content > img {
-    display: block;
-    width: 400px;
-    margin-bottom: 10px;
-}
+
 #content > p {
     margin-bottom: 10px;
 }
@@ -118,8 +114,11 @@ h3 {
     #nav {
         justify-content: space-between;
     }
-    section img {
-        width: 100%;
+    #header {
+        display: flex;
+        justify-content: space-around;
+    }
+    #header img {
         height: auto;
     }
 }
