@@ -49,9 +49,6 @@ section:before {
     border-right: 22px solid rgb(221, 221, 221);
     border-bottom: 11px solid transparent;
 }
-section:last-of-type {
-    margin: 0 0 0 5px;
-}
 
 h2 {
     text-align: left;
@@ -65,36 +62,47 @@ section > p {
 h3 {
     font-size: 24px;
 }
+h5 {
+    display: none;
+}
 
 @media screen and (max-width: 840px) {
-    section {
-        flex-direction: column;
-        background-color: rgba(233, 233, 233, 0.603);
-    }
-    section h2 {
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: 10px;
-    }
-    section div {
-        padding: 0 10px 10px 10px;
-    }
-
-    main {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: aliceblue;
-    }
     body {
         width: 100%;
     }
     html {
         min-width: 350px;
     }
+    section:before {
+        display: none;
+    }
 
-    section img {
-        width: 100%;
-        height: auto;
+    #verticalLine {
+        display: none;
+    }
+    section {
+        margin: 10px 5px 25px 5px;
+    }
+    section > p {
+        width: 90%;
+    }
+    #content {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5 {
+        display: block;
+        font-size: 23px;
+        border-radius: 8px;
+        width: 90%;
+        background-color: rgb(230, 230, 230);
+    }
+    #content h5:nth-of-type(odd) {
+        color: #081272;
+    }
+    #content h5:nth-of-type(even) {
+        color: #ffba00;
     }
 }
