@@ -1,19 +1,19 @@
-main{
+main {
     position: relative;
     margin: 20px auto;
     text-align: center;
 }
 
-#time{
+#time {
     display: inline-block;
-    color: #ffba00;  
-    text-align: right; 
+    color: #ffba00;
+    text-align: right;
 }
 
-#time>*{
-    position: absolute
+#time > * {
+    position: absolute;
 }
-#verticalLine{
+#verticalLine {
     display: inline-block;
     position: absolute;
     width: 10px;
@@ -21,13 +21,12 @@ main{
     border-radius: 5px;
     background-image: linear-gradient(#ffba00, #081272);
 }
-#content{
+#content {
     display: inline-block;
     margin-left: 35px;
 }
 
-
-section{
+section {
     padding: 9px 10px 10px 14px;
     margin: 0 0 20px 8px;
     border-radius: 5px;
@@ -39,9 +38,9 @@ section{
     -webkit-border-radius: 12px;
     border-radius: 12px;
 }
-section:before{
+section:before {
     position: absolute;
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     right: 100%;
@@ -50,19 +49,95 @@ section:before{
     border-right: 22px solid rgb(221, 221, 221);
     border-bottom: 11px solid transparent;
 }
-section:last-of-type{
+section:last-of-type {
     margin: 0 0 0 5px;
 }
 
-h2{
+h2 {
     text-align: left;
     margin-bottom: 10px;
 }
-section>p{
+section > p {
     text-align: left;
     width: 500px;
 }
 
-h3{
+h3 {
     font-size: 24px;
+}
+
+@media screen and (max-width: 840px) {
+    section {
+        flex-direction: column;
+        background-color: rgba(233, 233, 233, 0.603);
+    }
+    section h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    section div {
+        padding: 0 10px 10px 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    header h1 {
+        margin: 0 auto;
+    }
+    header ul {
+        width: 100%;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aliceblue;
+    }
+    body {
+        width: 100%;
+    }
+    html {
+        min-width: 350px;
+    }
+
+    nav {
+        position: relative;
+        padding-bottom: 20px;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.359);
+    }
+    #bar {
+        bottom: 15px;
+        width: 80px;
+    }
+    #nav > li:nth-of-type(1) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(2) {
+        margin: 30px 20px 20px 0;
+    }
+    #nav > li:nth-of-type(3) {
+        margin: 30px 0 20px 5px;
+    }
+    #nav > li:nth-of-type(4) {
+        margin: 30px 5px 20px 5px;
+    }
+    #nav {
+        justify-content: space-between;
+    }
+    section img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    #nav li {
+        font-size: 20px;
+    }
+    #bar {
+        height: 5px;
+        width: 60px;
+    }
 }
