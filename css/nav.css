@@ -29,11 +29,7 @@ h1 {
     font-size: 40px;
     line-height: 40px;
 }
-nav {
-    position: relative;
-    padding-bottom: 20px;
-    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.359);
-}
+
 #nav {
     display: flex;
     position: relative;
@@ -66,6 +62,11 @@ nav {
     position: absolute;
 }
 @media screen and (max-width: 840px) {
+    nav {
+        position: relative;
+        padding-bottom: 20px;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.359);
+    }
     header {
         flex-direction: column;
         padding-top: 15px;
