@@ -1,18 +1,21 @@
+## v2.0.0使用webpack进行重构
+## v1.0.0完成移动端适配
+
 ### v0.2.0
 
-���������԰���ƶ�������
+增加了留言板的移动端适配
 
 ### v0.1.2
 
-���Ӿ�ҵָ��ҳ����ƶ�������
+增加就业指导页面的移动端适配
 
 ### v0.1.0
 
-�汾����
+版本测试
 
 ### v0.1.0
 
-�汾����
+版本测试
 
 ### commit 1
 
@@ -20,15 +23,15 @@ test 1
 
 ## oringin
 
-index.html �ڸ�Ŀ¼�¡�
-index.html ���� html �ļ����
+index.html 在根目录下。
+index.html 不在 html 文件夹里。
 
-��˫�� index.html ������ҵ���վ��
-��ʹ�ùȸ�����������
+请双击 index.html 来浏览我的网站。
+请使用谷歌或火狐浏览器。
 
-js �ļ���������Ŀ¼��ֱ��� dependencies �� js��
+js 文件放在两个目录里，分别是 dependencies 和 js。
 
-dependencies �ļ��д�ŵ������˱�д�� js ����ܣ�Ҳ���������Ŀ�������� js �ļ���
-js �ļ��д�ŵ������Լ���д�� js ���롣
+dependencies 文件夹存放的是他人编写的 js 库或框架，也是我这个项目所依赖的 js 文件。
+js 文件夹存放的是我自己编写的 js 代码。
 
-����վ���� flex ���֣��ܹ���һ���ķֱ��ʷ�Χ�ڻ��������������������顣
+本网站采用 flex 布局，能够在一定的分辨率范围内获得无需横向滚动的浏览体验。
