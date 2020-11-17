@@ -16,13 +16,12 @@ main section {
   transition: 0.2s;
   padding: 10px;
 }
-main section img {
-  width: 380px;
-  height: 240px;
-  margin: auto;
-  border-radius: 5px;
+main section:hover {
+  background: white;
+  box-shadow: 6px 6px 6px rgba(128, 128, 128, 0.8);
 }
 main section div {
+  width: 60%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -36,9 +35,17 @@ main section div p .data {
   font-size: 13px;
 }
 main section a {
-  margin: auto;
+  width: 40%;
 }
-main section section a:hover {
+main section a div {
+  padding: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background: url(./d7ab6f77c4f9b6842236e219488e6e4b.jpg) center no-repeat;
+  background-size: contain;
+}
+main section a:hover {
   color: #081272;
 }
 
@@ -69,6 +76,15 @@ header h1 {
   margin: 15px 0 30px 10px;
   font-size: 40px;
   line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+header h1 div {
+  background: url(./0f5cf0e7845a2a742a577872d9deb7a2.png);
+  background-size: contain;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
 }
 header #nav {
   display: flex;
@@ -100,5 +116,18 @@ header #bar {
   border-radius: 2px;
   transition: 0.2s;
   position: absolute;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  color: black;
+}
+footer p:first-of-type {
+  padding-top: 31px;
+}
+footer p {
+  font-size: 15px;
+  text-align: center;
 }
 
