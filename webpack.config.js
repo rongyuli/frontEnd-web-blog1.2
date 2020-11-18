@@ -10,8 +10,23 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.less$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'] },
+            {
+                test: /\.less$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            additionalData: `
+                            @myblue: #081272;
+                            @myyellow: #ffba00;`,
+                        },
+                    },
+                ],
+            },
             { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader' },
+            { test: /\.html$/i, loader: 'html-loader' },
         ],
     },
     plugins: [
@@ -23,4 +38,5 @@ module.exports = {
     output: {
         publicPath: './',
     },
+    mode: 'development',
 }

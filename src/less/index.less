@@ -11,22 +11,23 @@ main {
         border-radius: 5px;
         margin: 0 auto;
         margin-bottom: 13px;
-        display: flex;
         box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.459);
         transition: 0.2s;
         padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        img {
-            width: 380px;
-            height: 240px;
-            margin: auto;
-            border-radius: 5px;
+        &:hover {
+            background: white;
+            box-shadow: 6px 6px 6px rgba(128, 128, 128, 0.8);
         }
+
         div {
             padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            & > * {
+                margin: 10px 10px 10px 0;
+            }
             p {
                 font-size: 18px;
                 line-height: 150%;
@@ -36,11 +37,40 @@ main {
                 }
             }
         }
-        a {
-            margin: auto;
-        }
-        section a:hover {
+        a :hover {
             color: #081272;
         }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section {
+        flex-direction: column;
+        background-color: rgba(233, 233, 233, 0.603);
+    }
+    section h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    section div {
+        padding: 0 10px 10px 10px;
+    }
+
+    main {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aliceblue;
+    }
+    body {
+        width: 100%;
+    }
+    html {
+        min-width: 350px;
+    }
+    section img {
+        width: 100%;
+        height: auto;
     }
 }
